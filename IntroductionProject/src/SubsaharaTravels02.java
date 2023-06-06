@@ -1,5 +1,3 @@
-import static org.testng.Assert.assertTrue;
-
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -26,7 +24,6 @@ public class SubsaharaTravels02 {
 		driver.findElement(By.cssSelector(".ui-icon.ui-icon-circle-triangle-e")).click();
 		driver.findElement(By.cssSelector("a[data-date='3']")).click();
 		driver.findElement(By.cssSelector("button[type='submit']")).click();
-		// Assert.assertEquals(ExpectedTitle, ActualTitle);
 		WebElement message = driver.findElement(By.cssSelector(".logo"));
 		System.out.println(message.getText());
 		driver.manage().deleteAllCookies();
