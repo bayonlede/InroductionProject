@@ -33,16 +33,19 @@ public class MouseAction {
 		while(i<productList.size()) 
 		{
 		
-			var name = productList.get(i).getText();
-			if(name.equals(item)) 
+			var name = productList.get(i);
+			if(name.getText().equals(item)) 
 			{
-				productList.get(i).click();
-			}
+				name.click();
+				
+				}
 			i++;
 			break;
+			}
+			
 				
 		}
 
 	}
 
-}
+
